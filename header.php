@@ -95,16 +95,16 @@
                 </div>
                 <!--/.nav-collapse -->
 
-                <div class="navbar-collapse collapse right" id="search-not-mobile">
+                <!-- <div class="navbar-collapse collapse right" id="search-not-mobile">
                     <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
                         <span class="sr-only">Toggle search</span>
                         <i class="fa fa-search"></i>
                     </button>
-                </div>
+                </div> -->
 
             </div>
 
-            <div class="collapse clearfix" id="search">
+            <!-- <div class="collapse clearfix" id="search">
 
                 <form class="navbar-form" role="search" action="results.php" method="POST">
                     <div class="input-group">
@@ -117,7 +117,7 @@
                     </div>
                 </form>
 
-            </div>
+            </div> -->
             <!--/.nav-collapse -->
 
         </div>

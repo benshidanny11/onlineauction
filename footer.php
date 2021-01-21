@@ -65,9 +65,10 @@
                           <h4>User section</h4>
 
                         <ul>
-                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                            <li><a href="adminlogin.php" >Login as admin</a>
                             </li>
-                            <li><a href="register.html">Regiter</a>
+                            <li><a href="userItems.php">My items</a>
+                            <li><a href="register.php">Regiter</a>
                             </li>
                         </ul>
 
@@ -87,7 +88,7 @@
             </div>
             <!-- /.container -->
         </div>
- _________________________________________________________ -->
+ 
         <div id="copyright">
             <div class="container">
                 <div class="col-md-6">

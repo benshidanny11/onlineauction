@@ -13,7 +13,7 @@
     <meta name="keywords" content="">
 
     <title>
-        Obaju : e-commerce template
+       Online auction::Datails
     </title>
 
     <meta name="keywords" content="">
@@ -58,8 +58,12 @@
           
           $ItemNo = $_GET['ItemNo'];
           $query = "SELECT * FROM item Where ItemID=$ItemNo";
+          $queryCategory="SELECT * FROM `category` INNER JOIN item on category.CategoryID=item.CategoryID where item.ItemID=$ItemNo";
           $result = mysqli_query($db, $query);
           $row = mysqli_fetch_array($result);
+
+          $resultCategory = mysqli_query($db, $queryCategory);
+          $rowCategory = mysqli_fetch_array($resultCategory);
           $leastValue=$row['CurrentPrice']+100000;
           $ExpectedValue=$row['ExpectedPrice'];
 
@@ -150,7 +154,12 @@
 
                         </div>
                         <div class="col-sm-6">
-                            <div class="box">
+                          <?php if($rowCategory['Category']=="Auction") : ?>
+   
+          <!-- inner condition -->
+          
+          <div class="box">
+
                                 <h1 class="text-center"><?php echo $row['ItemName'];?></h1>
                                 <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details, material & care and sizing</a>
                                
@@ -261,18 +270,23 @@
 
 
 									<br>
-									
-									
-
-
-                                <p class="text-center buttons">
-                                    <a href="" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy now for RWF   <?php echo number_format($row['ExpectedPrice'],2);?> </a> 
-                                    
-                                </p>
-
 
                             </div>
 
+
+
+
+
+<?php else : ?>
+    <p class="text-center buttons">
+                                    <a href='<?php echo 'buy.php?productname='.$row['ItemName'].''?>' class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy now for RWF   <?php echo number_format($row['ExpectedPrice'],2);?> </a> 
+                                    
+                                </p>
+<?php endif; ?>
+                        
+
+
+                            
                             
                         </div>
 

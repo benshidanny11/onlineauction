@@ -180,7 +180,7 @@
                                     <p class="price">RWF : <?php echo number_format($list['CurrentPrice'],2);?></p>
                                     <p class="buttons">
                                         <a href="detail.php?ItemNo=<?php echo $list['ItemID'] ?>" class="btn btn-default">View detail</a>
-                                        <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                        <a href="buy.php" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                                     </p>
                                 </div>
                                 <!-- /.text -->

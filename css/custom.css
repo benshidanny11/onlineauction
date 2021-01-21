@@ -31,3 +31,8 @@
     top: 0px;             /* change to position the timer */
     left: 0px;            /* change to position the timer; delete this property and it's value to keep timer centered on page */
 }
+.d-container{
+    width: 100%;
+    height: 70%;
+    border: 5px solid  blue;
+}

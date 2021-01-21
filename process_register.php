@@ -7,7 +7,7 @@ session_start();
         $addr = $_POST['addr'];
         $cno = $_POST['cno'];
         $username = strip_tags($_POST['username']);
-        $password = md5(strip_tags($_POST['password']));
+        $password = strip_tags($_POST['password']);
 
         //check whether there's already a user having the same username
         $db = mysqli_connect('localhost','root','','shop')

@@ -8,7 +8,7 @@ if (!isset($_SESSION['loginid']) || !isset($_SESSION['username']))
     {
 
         $u = strip_tags($_POST['username']);
-        $p = $_POST['password'];
+        $p = strip_tags($_POST['password']);
 
         $db = mysqli_connect('localhost','root','','shop')
                 or die('Error connecting to MySQL server.'); 

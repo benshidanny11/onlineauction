@@ -43,7 +43,8 @@
 
 <body>
 
- 	<?php $db = mysqli_connect('localhost','root','','shop')
+     <?php 
+     $db = mysqli_connect('localhost','root','','shop')
 		or die('Error connecting to MySQL server.'); 
 
 		$query1 = "SELECT * FROM category ";

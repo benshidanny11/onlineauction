@@ -21,7 +21,7 @@ if(isset($_SESSION['userid'])){
     <meta name="keywords" content="">
 
     <title>
-        Obaju : e-commerce template
+      Online auction:: Register || Login
     </title>
 
     <meta name="keywords" content="">
@@ -74,10 +74,6 @@ if(isset($_SESSION['userid'])){
                         <h1>New account</h1>
 
                         <p class="lead">Not our registered customer yet?</p>
-                        <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
-                        <p class="text-muted">If you have any questions, please feel free to <a href="contact.php">contact us</a>, our customer service center is working for you 24/7.</p>
-
-                        <hr>
                         <?php
                         if(isset($_GET['err']) && $_GET['err'] == 2) {
                             echo '
